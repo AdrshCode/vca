@@ -11,10 +11,13 @@ const HomePage = () => {
     }, [navigate, value]);
 
     return (
+        <>
+        <h1>Enter Your Details Here</h1>
         <div>
             <input type="text" placeholder="Enter Room Code" onChange={(e) => setValue(e.target.value)} />
             <button onClick={handleJoinRoom}>Join</button>
         </div>
+        </>
     );
 }
 
